@@ -1,3 +1,4 @@
+<!-- Inspiration: https://store.epicgames.com/en-US/ -->
 <!DOCTYPE html>
 <html>
   <head>
@@ -11,6 +12,20 @@
   </head>
 
   <body>
-    <%= yield %>
+  <nav class="text-white bg-black navbar sticky-top bg-body-tertiary d-flex justify-content-center">
+    <a class="navbar-brand"><img src="https://img.icons8.com/?size=1x&id=yGcWL8copNNQ&format=png" alt="Bootstrap" width="40" height="40"></a>
+    
+    <ul class="nav d-flex justify-content-center">
+      <li class="nav-item">
+        <%= link_to "Home", pages_home_path, :class => 'nav-link fw-bold text-light' %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Contact", pages_contact_path, :class => 'nav-link fw-bold text-light' %>
+      </li>
+    </ul>
+  </nav>
+  
+  <%= yield %>
+
   </body>
 </html>

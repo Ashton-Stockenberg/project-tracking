@@ -1,0 +1,26 @@
+<div class="container-fluid p-0">
+  <div class="position-relative text-center">
+    <img class="img-fluid" src="https://dummyimage.com/1920x1080/787678/fff&text=+">
+    <div class="position-absolute top-50 start-50 translate-middle">
+      <h1 class="text-white fw-bold text-center">Ashtons Epic Website</h1>
+      <p class="text-white text-center fs-3">very very epic</p>
+      <%= link_to "Contact Us Now", pages_contact_path, :class => 'text-decoration-none fw-bold text-light rounded-pill fs-4 bg-danger px-5 py-2 d-block' %>
+    </div>
+  </div>
+
+  <h2 class="text-center fw-bold mt-4 fs-1">Explore More Content</h2>
+
+  <div class="d-flex justify-content-between p-2">
+    <% for i in 0..5 do %>
+      <div class="p-1">
+        <img class="img-fluid" src="https://dummyimage.com/300x400/000/fff">
+        <h3>Name</h3>
+      </div>
+    <% end %>
+  </div>
+
+  <div>
+    
+  </div>
+
+</div>
